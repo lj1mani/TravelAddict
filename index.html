@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Addict</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav class="nav">
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                <div> 
+                    <li><a href="#info">Informacije</a></li>
+                    <li><a href="#prijava">Prijava</a></li>
+                    <li><a href="#prijava">Registracija</a></li>
+                    <li><a href="drzave.html">Države</a></li>
+                </div>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Travel Addict</h1>
+        <p>Dobrodošli na spletni strani za usmerjanje na najboljše destinacije <br></p>
+        <p><i>"To travel is to live"</i></p>
+    </div>
+    </section>
+
+    <!-- ------- Prijava in Registracija ---------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="login" id="prijava">
+        <h1>Prijava in Registracija</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquam atque incidunt in quos reprehenderit velit accusantium eligendi, ducimus facilis. Accusamus dolores impedit, laboriosam ex ad reiciendis repudiandae cum eos?</p>
+        <div class="row">
+                             <!------------ Prijava ------------->   
+            <div class="login-col"> 
+                    <h1>Prijava</h1>
+                    <p>Prijavite se tukaj</p>
+                <div class="input-group margin-bottom-sm">
+                    <span class="input-group-addon"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
+                    <input class="form-control" type="text" placeholder="Uporabniško ime" id="email">
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
+                    
+                    <input class="form-control" type="password" placeholder="Geslo" id="geslo">
+                </div>
+                <br>
+                <input class="hero-btn" type="submit" value="Prijavi se" onclick="preveri();"></input>
+                </div>
+
+                            <!------------  Registracija ------------->
+            <div class="login-col">          
+                    <h1>Registracija</h1>
+                    <p>Registrirajte se tukaj</p>
+                
+                <div class="input-group margin-bottom-sm">
+                    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span>
+                    <input class="form-control" type="text" placeholder="Email naslov" id="email">
+                </div>
+                <br>
+                <div class="input-group margin-bottom-sm">
+                    <span class="input-group-addon"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
+                    <input class="form-control" type="text" placeholder="Uporabniško ime" id="email">
+                </div>
+                <br>
+
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
+                    <input class="form-control" type="password" placeholder="Geslo" id="geslo">
+                </div>
+                  <br>
+                  <input class="hero-btn" type="submit" value="Registriraj se" onclick="preveri();"></input>
+            </div>
+        </div>
+    </section>
+
+    <!---------- Footer --------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="footer" id="info">
+        <h2>Informacije</h2>
+        <P>Ta spletna stran vam omogoča, da si lahko ogledate katere zanimivosti in kakšno kulinariko vam ponujajo različna mesta v različnih državah.</P>
+        <P>"Traveling it leaves you speechless, then turns you into a storyteller." - Ibn Battuta</P>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ea, nisi dicta expedita deleniti rem officiis, repudiandae sit ratione quis, nulla vitae iste similique est ,<br>praesentium aut illum ex. Sapiente.</P>
+        <br>
+    
+    
+
+        <p>Sledite nam na družabnih omrežjih</p>
+        <div class="icons">
+            <a href="https://sl-si.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a> 
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a> 
+        </div>
+        
+        <p>Made with <i class="fa fa-heart"></i> by Đejhan, Matic & Darko</p>
+    </section>
+    
+<!----------------------- Javascript -------------------------------------------------------------------------------------------------------------------------------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+        function preveri(){
+
+            var opozorilo = "";
+
+        if(document.getElementById("email").value == ""){
+ 			opozorilo += "Email ni vnesen!\n";
+	    }
+
+        if(document.getElementById("geslo").value == ""){
+ 			opozorilo += "Geslo ni vneseno!\n";
+	    }
+
+        if(opozorilo != ""){
+			alert(opozorilo);
+		}
+
+        return true;
+
+        }
+
+
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Addict</title>
+<link rel="stylesheet" href="css.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="header3">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Prijava</a></li>
+                    <li><a href="index.html">Registracija</a></li>
+                    <li><a href="index.html">Domov</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Travel Addict</h1>
+            <p>Izberite državo katero želite, da vas očara<br></p>
+            <p><i>"To travel is to live"</i></p>
+        </div>
+    </section>
+
+    <!--------------------------------------- Države ----------------------------------------------------------------------------->
+    <section class="drzave">
+        <h1>Države</h1>
+        <p>Lorem ipsun sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="drzave-col">
+                <a href="mestaSLO.html"><img src="SLO.jpg"></a>
+                <h3>Slovenija</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi optio modi fugiat maiores cum, fuga
+                    architecto aut ratione a, aliquid possimus quo nihil amet ipsum reiciendis eos veritatis dignissimos
+                    id.</p>
+            </div>
+            <div class="drzave-col" href="#">
+                <img src="BIH.jpg">
+                <h3>Bosna in Hercegovina</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi optio modi fugiat maiores cum, fuga
+                    architecto aut ratione a, aliquid possimus quo nihil amet ipsum reiciendis eos veritatis dignissimos
+                    id.</p>
+            </div>
+            <div class="drzave-col" href="#">
+                <img src="HR.jpg">
+                <h3>Hrvaška</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi optio modi fugiat maiores cum, fuga
+                    architecto aut ratione a, aliquid possimus quo nihil amet ipsum reiciendis eos veritatis dignissimos
+                    id.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------- Footer ----------------------------------------------------------------------------------->
+    <section class="footer" id="about-us">
+
+        <div class="icons">
+            <a href="https://sl-si.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <p>Made with <i class="fa fa-heart"></i> by Đejhan, Matic & Darko</p>
+    </section>
+
+    <!-- -------------------- Javascript ---------------------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+
+</html>

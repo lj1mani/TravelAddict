@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Addict</title>
+<link rel="stylesheet" href="css.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="header4">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="drzave.html">Države</a></li>
+                    <li><a href="index.html">Domov</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Travel Addict</h1>
+            <p>Izberite mesto katero vas zanima<br></p>
+            <p><i>"To travel is to live"</i></p>
+        </div>
+    </section>
+
+    <!--------------------------------------------------- Mesta -------------------------------------------------------------->
+
+    <section class="mesta">
+        <br><br>
+        <h1>Slovenija</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam neque ducimus minus corporis eos distinctio
+            ratione fugit? Explicabo dolore veritatis illo nobis quibusdam ipsum inventore cum! Omnis ea sint tempora?
+        </p>
+        <div class="row">
+
+            <div class="mesta-col">
+                <img src="celje.jpg">
+                <div class="layer">
+                    <h3>CELJE</h3>
+                </div>
+            </div>
+
+            <div class="mesta-col">
+                <img src="kranj.jpg">
+                <div class="layer">
+                    <h3>KRANJ</h3>
+                </div>
+            </div>
+
+            <div class="mesta-col">
+                <img src="novomesto.jpg">
+                <div class="layer">
+                    <h3>NOVO MESTO</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mesta">
+        <div class="row">
+
+            <div class="mesta-col">
+                <img src="maribor.jpg">
+                <div class="layer">
+                    <h3>MARIBOR</h3>
+                </div>
+            </div>
+
+            <div class="mesta-col">
+                <img src="ljubljana.jpg">
+                <div class="layer">
+                    <a href="ljubljana.html">
+                        <h3>LJUBLJANA</h3>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mesta-col">
+                <img src="piran.jpg">
+                <div class="layer">
+                    <h3>PIRAN</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mesta">
+        <div class="row">
+
+            <div class="mesta-col">
+                <img src="škofjaloka.jpg">
+                <div class="layer">
+                    <h3>ŠKOFJA LOKA</h3>
+                </div>
+            </div>
+
+            <div class="mesta-col">
+                <img src="semic.jpg">
+                <div class="layer">
+                    <h3>SEMIČ</h3>
+                </div>
+            </div>
+
+            <div class="mesta-col">
+                <img src="koper.jpg">
+                <div class="layer">
+                    <h3>KOPER</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ------- Footer -------------------------- -->
+    <section class="footer" id="about-us">
+        <p>Sledite nam na družabnih omrežjih</p>
+        <div class="icons">
+            <a href="https://sl-si.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <p>Made with <i class="fa fa-heart"></i> by Đejhan, Matic & Darko</p>
+    </section>
+
+    <!-- -------------------- Javascript ---------------------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
